@@ -5,7 +5,7 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      endingValue: 20
+      endingValue: null
     }
   }
 
