@@ -46,8 +46,8 @@ export default class Response extends React.Component {
   render(){
     const { text, count } = this.state
     return (
-      <div>
-        <h2>{ count }</h2>        
+      <div>    
+        <h2>{count}</h2>
         <h2>{ text }</h2>
         <Button variant='outlined' color='primary' onClick={this.onIncrease.bind(this)}>
           +
