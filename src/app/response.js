@@ -1,11 +1,14 @@
 import React from 'react'
 
+import { withStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
+
 export default class Response extends React.Component {
   constructor(props){
     super(props)
     
     this.state = {
-      endingValue: this.props.endingValue,
+      endingValue: Number(this.props.endingValue),
       count: 1
     }
   }
@@ -25,6 +28,10 @@ export default class Response extends React.Component {
 
         // iterate count state
         newState.count = count + 1
+
+        if (endingValue === count){
+          newState.showClear = true
+        }
       }
 
       this.setState(newState)
@@ -32,14 +39,19 @@ export default class Response extends React.Component {
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval);
+    clearInterval(this.interval)
   }
 
   render(){
-    const { text } = this.state
+    const { text, showClear } = this.state
     return (
       <div>
-        <h1>{text}</h1>
+        <h1>{ text }</h1>
+        { showClear && 
+          <Button variant='outlined' color='primary' onClick={ this.props.onClear }>
+            Clear!
+          </Button>
+        }
       </div>
     )
   }
