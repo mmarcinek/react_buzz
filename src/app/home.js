@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Response from './response'
+import Controls from './controls'
 
 import Particles from 'react-particles-js';
 import particles from '../particles.json'
@@ -47,10 +47,14 @@ export default class Home extends React.Component {
         <Particles 
           params={ particles } 
           style={{
-            backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='red' font-size='20'>${text}</text></svg>")`
+            backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='red' font-size='20'>${text}</text></svg>")`,
+            position: 'absolute',
+            width: 100 + '%',
+            height: 100 + '%',
+            zIndex: -1,
           }}
         />    
-        <Response 
+        <Controls 
           count={count}
           onIncrease={() => this.updateComponent('increase')}
           onDecrease={() => this.updateComponent('decrease')}
