@@ -22,6 +22,5 @@ Entering `npm start` will compile the application and open your default browser 
 
 1. [Create React App](https://github.com/facebookincubator/create-react-app)
 
-⋅⋅⋅Create React App is the basic React installation that is supported by the React.js team, for the sake of a quick project, it gets you everything needed to get started without fussing over installing all required dependencies. Just delete some boilerplate and get started.⋅⋅
-⋅⋅⋅ ⋅⋅
+* Create React App is the basic React installation that is supported by the React.js team, for the sake of a quick project, it gets you everything needed to get started without fussing over installing all required dependencies. Just delete some boilerplate and get started.
 
