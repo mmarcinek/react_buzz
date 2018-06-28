@@ -10,6 +10,7 @@ export default class Home extends React.Component {
     this.state = {
       count: 1
     }
+    this.baseState = this.state 
   }
 
   componentDidMount() {
@@ -35,6 +36,10 @@ export default class Home extends React.Component {
     this.setState(newState)
   }
 
+  resetCount(){
+    this.setState({count: 1}, () => this.updateComponent())
+  }
+
   render() {
     const { text, count } = this.state
     
@@ -47,6 +52,7 @@ export default class Home extends React.Component {
           count={count}
           onIncrease={() => this.updateComponent('increase')}
           onDecrease={() => this.updateComponent('decrease')}
+          onReset={() => this.resetCount('reset')}
         />
       </div>
     )
