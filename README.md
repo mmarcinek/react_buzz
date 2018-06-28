@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
 ## Getting Started 
 
 Clone the repo via HTTPS (by entering in the terminal):
@@ -14,12 +12,13 @@ Clone the repo via SHH:
 
 While this repo is pretty lightweight, we will need some dependencies to get started:
 
-**`npm i`** or **`npm install`**
+`npm i` or `npm install`
 
 will get everything you need to run this application.
 
-Entering **`npm start`** will compile the application and open your default browser to **`localhost:3000`**
+Entering `npm start` will compile the application and open your default browser to `localhost:3000` you can use that application, thanks [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ### More about dependencies, AKA "What are you installing
 
+1. [Create React App](https://github.com/facebookincubator/create-react-app)
 
