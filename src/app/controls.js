@@ -11,15 +11,18 @@ export default class Controls extends React.Component {
     return (
       <section 
         style={styles.container}> 
-        <Typography variant="display3" gutterBottom>
-          {count}
+        <Typography 
+          style={styles.typo} 
+          variant="display3" 
+          gutterBottom>
+            {count}
         </Typography>   
         <div style={styles.btnGroup}>
           <Button
             variant='contained' 
             color='primary' 
             onClick={onIncrease}>
-            <UpIcon />
+              <UpIcon />
           </Button>
           &nbsp;
           <Button        
@@ -27,7 +30,7 @@ export default class Controls extends React.Component {
             variant='contained' 
             color='secondary' 
             onClick={onDecrease}>
-            <DownIcon />
+              <DownIcon />
           </Button>
         </div>
       </section>
@@ -47,6 +50,9 @@ const styles = {
     transform: 'translate(-50%, -50%)',
     textAlign: 'center',
     flexDirection: 'column'
+  },
+  typo: {
+    marginBottom: '10px'
   },
   btnGroup: {
     flexDirection: 'row'    
