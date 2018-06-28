@@ -41,3 +41,9 @@ Entering `npm start` will compile the application and open your default browser 
         <AlarmOff />
       <Button>
     ```
+4. [typeface-roboto](https://github.com/KyleAMathews/typefaces/tree/master/packages/roboto)
+    * The name says it all, basically, it is a very Webpack friendly means of adding the Roboto font to a project.
+5. [react-particles-js](https://github.com/Wufe/react-particles-js)
+    * **Well, because bubbles!**
+
+Happy Times!
