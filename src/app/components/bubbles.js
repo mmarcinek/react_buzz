@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Particles from 'react-particles-js'
-import particles from '../particles.json'
+import particles from '../../particles.json'
 
 export default class Bubbles extends React.Component {
   render() {

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import App from './app/app';
-import Bubbles from './components/bubbles'
+import Bubbles from './app/components/bubbles'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<React.Fragment>
