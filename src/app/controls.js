@@ -16,15 +16,13 @@ export default class Controls extends React.Component {
         </Typography>   
         <div style={styles.btnGroup}>
           <Button
-            className='btnBtn'
             variant='contained' 
             color='primary' 
             onClick={onIncrease}>
             <UpIcon />
           </Button>
           &nbsp;
-          <Button 
-            className='btnBtn'          
+          <Button        
             style={styles.down} 
             variant='contained' 
             color='secondary' 
