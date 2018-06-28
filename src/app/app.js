@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Controls from './controls'
-import FizzBuzz from './fizzbuzz'
+import Controls from '../components/controls'
+import FizzBuzz from '../components/fizzbuzz'
 
 export default class Home extends React.Component {
   constructor(props) {
