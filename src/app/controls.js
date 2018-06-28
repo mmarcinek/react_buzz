@@ -1,36 +1,63 @@
 import React from 'react'
 
-// import { withStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import UpIcon from '@material-ui/icons/ArrowUpward'
+import DownIcon from '@material-ui/icons/ArrowDownward'
 
 export default class Controls extends React.Component {
   render() {
     const { count, onDecrease, onIncrease } = this.props
     return (
-      <div style={{
-        width: '25%',
-        backgroundColor: 'rgba(255,255,255, .75)',
-        position: 'absolute',
-        padding: '80px 0',
-        borderRadius: '5px',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        textAlign: 'center',
-        flexDirection: 'column'
-      }}>    
-        <h2 style={{marginTop: 0}}>{count}</h2>
-        <div style={{
-          flexDirection: 'row'
-        }}>
-          <Button variant='outlined' color='primary' onClick={onIncrease}>
-            +
+      <section 
+        style={styles.container}> 
+        <Typography 
+          style={styles.typo} 
+          variant="display3" 
+          gutterBottom>
+            {count}
+        </Typography>   
+        <div style={styles.btnGroup}>
+          <Button
+            variant='contained' 
+            color='primary' 
+            onClick={onIncrease}>
+              <UpIcon />
           </Button>
-          <Button variant='outlined' color='primary' onClick={onDecrease}>
-            -
+          &nbsp;
+          <Button        
+            style={styles.down} 
+            variant='contained' 
+            color='secondary' 
+            onClick={onDecrease}>
+              <DownIcon />
           </Button>
         </div>
-      </div>
+      </section>
     )
+  }
+}
+
+const styles = {
+  container: {
+    width: '20%',
+    backgroundColor: 'rgba(255,255,255, .75)',
+    position: 'absolute',
+    padding: '20px',
+    borderRadius: '5px',
+    top: '45%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    textAlign: 'center',
+    flexDirection: 'column'
+  },
+  typo: {
+    marginBottom: '10px'
+  },
+  btnGroup: {
+    flexDirection: 'row'    
+  },
+  down: {
+    backgroundColor: 'rgba(0,0,0, .5)'
   }
 }
