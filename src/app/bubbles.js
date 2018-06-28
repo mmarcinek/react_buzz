@@ -5,9 +5,8 @@ import particles from '../particles.json'
 
 export default class Bubbles extends React.Component {
   
-  render() {
-    const { text } = this.props
 
+  render() {
     return (
       <Particles 
         canvasClassName='particleCanvas'
