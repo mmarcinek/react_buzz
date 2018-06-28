@@ -10,10 +10,16 @@ or
 Clone the repo via SHH:
 `git clone git@github.com:mmarcinek/react_buzz.git && cd react_buzz`
 
-## Install Dependencies
+## Installing Dependencies
 
 While this repo is pretty lightweight, we will need some dependencies to get started:
 
-`npm i` or `npm install`
+**`npm i`** or **`npm install`**
 
 will get everything you need to run this application.
+
+Entering **`npm start`** will compile the application and open your default browser to **`localhost:3000`**
+
+### More about dependencies, AKA "What are you installing
+
+
