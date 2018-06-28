@@ -1,23 +1,15 @@
 import React from 'react'
 
 export default class FizzBuzz extends React.Component{
-  componentWillReceiveProps(nextProps, nextState){
-    const {text} = nextProps
-   
-    console.log(text)
-    let canvas = document.getElementById('fbCanvas')
-    let context = canvas.getContext('2d')
-    context.font = '20pt Calibri';
-    context.fillText(text, 0, 50);
-  }
-
   render(){
+    const {text} = this.props
     return(
       <canvas id="fbCanvas" 
         style={{
+          backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='rgb(255,255,255)' font-size='20' font-family='Helvetica, Arial, sans-serif'>${text}</text></svg>")`,
           position: 'absolute',
-          // width:'100%', 
-          // height:'100%', 
+          height: '100%',
+          width: '$100%',
           zIndex: -1}} />
     )
   }   
