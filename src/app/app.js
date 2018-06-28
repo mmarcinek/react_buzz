@@ -17,8 +17,7 @@ export default class Home extends React.Component {
   }
 
   updateComponent(i) {
-    const newState = {}
-
+    const newState = {} 
     const { count } = this.state
 
     newState.count =
