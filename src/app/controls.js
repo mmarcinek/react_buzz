@@ -9,15 +9,16 @@ export default class Controls extends React.Component {
     return (
       <div style={{
         width: '25%',
-        backgroundColor: 'rgba(255,255,255, .9)',
+        backgroundColor: 'rgba(255,255,255, .75)',
         position: 'absolute',
-        padding: '50px',
+        padding: '80px 0',
+        borderRadius: '5px',
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
         textAlign: 'center',
         flexDirection: 'column'
-      }}>            
+      }}>    
         <h2 style={{marginTop: 0}}>{count}</h2>
         <div style={{
           flexDirection: 'row'
