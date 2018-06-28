@@ -4,12 +4,9 @@ import Particles from 'react-particles-js'
 import particles from '../particles.json'
 
 export default class Bubbles extends React.Component {
-  
-
   render() {
     return (
       <Particles 
-        canvasClassName='particleCanvas'
         params={ particles } 
         style={{
           position: 'absolute',

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Controls from './controls'
-import Bubbles from './bubbles'
+import FizzBuzz from './fizzbuzz'
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ export default class Home extends React.Component {
     
     return (
       <div>
-        <Bubbles
+        <FizzBuzz
           text={text}
         />
         <Controls 
