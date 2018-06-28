@@ -1,9 +1,7 @@
 import React from 'react'
 
 import Controls from './controls'
-
-import Particles from 'react-particles-js';
-import particles from '../particles.json'
+import Bubbles from './bubbles'
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -12,7 +10,6 @@ export default class Home extends React.Component {
     this.state = {
       count: 1
     }
-
   }
 
   componentDidMount() {
@@ -44,16 +41,9 @@ export default class Home extends React.Component {
     
     return (
       <div>
-        <Particles 
-          params={ particles } 
-          style={{
-            backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='120px'><text x='0' y='15' fill='red' font-size='20'>${text}</text></svg>")`,
-            position: 'absolute',
-            width: 100 + '%',
-            height: 100 + '%',
-            zIndex: -1,
-          }}
-        />    
+        <Bubbles
+          text={text}
+        />
         <Controls 
           count={count}
           onIncrease={() => this.updateComponent('increase')}
